@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <header>
+      
+        <nav id="menu">
+            <img src="./multimedia/logo.png" width="6%">
+                <ul>
+                    <li><a href="#homb">Caballeros</a></li>
+                    <li><a href="#damas">Damas</a></li>
+                    <li><a href="#niñas">Niñas</a></li>
+                    <li><a href="#niños">Niños</a></li>
+                  </ul>
+                <ul>
+                    <li><button id="myBtn">Ingresar</button></li>
+              </ul>
+        </nav>
+        <br>
+        
+    </header>
+    <main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./multimedia/Imagen1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/Imagen2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/Imagen3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div><br>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="close">&times;</span>
+          <form class="login-form" method="post">
+            <h2>Login</h2><br>
+            <p>Usuario</p>
+            <input type="text" placeholder="Usuario" required />
+            <p>Contraseña</p>
+            <input type="password" placeholder="Contraseña" required /><br>
+            <button>Iniciar</button>
+            <p class="message">¿No estás registrado? <button id="openRegistroModal">Crear cuenta</></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="registroModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="registroClose">&times;</span>
+            <form class="Registro" method="post">
+                <h2>Registro</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Apellidos">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña"><br>
+                <a class="btn" href="#">Registrar</a>
+                <p class="mensaje">¿Ya estás registrado? <button id="openLoginModal">Inicia sesión</button></p>
+            </form>
+        </div>
+    </div>
+      
+      <main>
+        <section id="homb">
+        <h4>HOMBRES</h4>
+        <div class="container">
+          <div class="card">
+            <img src="./multimedia/hombre1.jpg">
+            <h3>TENNIS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/hombre2.jpg">
+            <h3>TENNIS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/hombre3.jpg">
+            <h3>TENNIS</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </section>
+      <section id="damas">
+        <h4>DAMAS</h4>
+        <div class="container2">
+          <div class="card">
+            <img src="./multimedia/dama1.jpg">
+            <h3>Zapatillas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/dama2.jpg">
+            <h3>Zapatillas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/dama3.jpg">
+            <h3>Zapatillas</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </section>
+      <section id="niñas">
+        <h4>NIÑAS</h4>
+        <div class="container3">
+          <div class="card">
+            <img src="./multimedia/niña1.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/niña2.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/niña3.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </section>
+
+      <section id="niños">
+        <h4>NIÑOS</h4>
+        <div class="container4">
+          <div class="card">
+            <img src="./multimedia/niño1.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/niño2.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+
+          <div class="card">
+            <img src="./multimedia/niño3.jpg">
+            <h3>Tensiss</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+            <h2>$$$$$$</h2>
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container5">
+        <div class="sec info">
+        <h2>Sobre Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolores ad culpa? Molestiae saepe, 
+           nostrum maxime neque laboriosam accusantium eos quis voluptas vero, necessitatibus iure aliquid cumque
+           ut ad modi.
+        </p>
+        <ul class="link">
+          <li><a href="https://www.facebook.com/nicolas.valencia.14811692" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/vancod__/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h2>Mas Enlaces</h2>
+        <ul>
+          <li><button>Informacion</button></li>
+          <li><button>FAQ</button></li>
+          <li><button>Politica y Privcidad</button></li>
+          <li><button>Ayuda</button></li>
+          <li><button>Terminos y condicione</button></li>
+          <li><button>Contactanos</button></li>
+        </ul>
+      </div>
+      <div class="contac">
+        <h2>Contactanos</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span>Cr.5 # 7-26<br>
+                  San Alonso<br>
+                  Neiva-Huila</span>
+                  <br>
+                  <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <p><button>+57 321 000 0000</button></p>
+                  <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <p><button>example@gamil.com</button></p>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </footer>
+    
+  </body>
+  <script src="./acciones.js"></script>
+
+</html>
